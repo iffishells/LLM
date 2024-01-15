@@ -17,7 +17,12 @@ RUN pip install transformers
 RUN pip install jupyterlab
 RUN pip install pandas
 RUN pip install matplotlib
-RUN pip install sentencepiece 
+RUN pip install sentencepiece
+RUN pip install faiss-cpu==1.7.4
+RUN pip install chromadb==0.3.21
+RUN pip install -U pydantic
+RUN pip install pydantic-settings
+Run pip install pinecone-client==2.2.2
 
 EXPOSE 8000
 
