@@ -6,9 +6,9 @@ RUN apt-get update
 WORKDIR app
 RUN apt-get install -y python3 python3-pip
 
-COPY venv /app/venv
-SHELL ["/bin/bash","-c"]
-RUN source venv/bin/activate
+#COPY venv /app/venv
+#SHELL ["/bin/bash","-c"]
+#RUN source venv/bin/activate
 
 RUN pip install torch
 RUN pip install tensorflow
@@ -22,7 +22,10 @@ RUN pip install faiss-cpu==1.7.4
 RUN pip install chromadb==0.3.21
 RUN pip install -U pydantic
 RUN pip install pydantic-settings
-Run pip install pinecone-client==2.2.2
+Run pip install pinecone-client==2.2.2 
+RUN pip install below
+RUN pip install pyspark
+RUN pip install weaviate-client==3.19.1
 
 EXPOSE 8000
 

@@ -36,3 +36,8 @@ sudo docker push iffishells/llm
 ```bash
 docker pull iffishells/llm
 ```
+### Docker Compose
+```bash
+docker-compose build
+docker-compose up
+```
