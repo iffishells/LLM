@@ -1,2 +1,3 @@
 /venv/*
 *.tar
+*.ipynb_checkpoints
